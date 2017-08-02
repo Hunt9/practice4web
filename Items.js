@@ -1,9 +1,8 @@
-//create firebase reference
+	//create firebase reference
 var dbRef = new Firebase("https://startup-164c6.firebaseio.com/");
 var contactsRef = dbRef.child('Categories');
 //load older conatcts as well as any newly added one...
 
-var tempo = '';
 
 contactsRef.on("child_added", function(snap) {
   console.log("added", snap.key(), snap.val());
@@ -12,19 +11,21 @@ contactsRef.on("child_added", function(snap) {
     .innerHTML += contactHtmlFromObject(snap.val());
 });
 
-	var cat = $('#contactz').find(':selected').val();
-	
-	var car = document.querySelector('#contactz').value;
-	
-	temp.valueOf(cat);
-	tempo = cat;
-	
-	var t = car;
 
-var catz = "Categories/"+car+"/Items";
+	
+var catz = "Categories/-KgZ6K-QqK2aAYkOy0Pd/Items";
 
 
 var itemRef = dbRef.child(catz);
+
+
+itemRef.on("child_added", function(snap) {
+  console.log("added", snap.key(), snap.val());
+  document
+    .querySelector('#contacts')
+    .innerHTML += itemHtmlFromObject(snap.val());
+});
+
 
 
 //save contact
@@ -44,7 +45,7 @@ document
         })
         contactForm.reset();
     } else {
-      alert('Please fill atlease name or email!');
+      alert('Please fill name,description,unit & price!');
     }
   }, false);
 
@@ -56,4 +57,14 @@ function contactHtmlFromObject(contact){
   
   return html;
 }// JavaScript Document
+
+function itemHtmlFromObject(items){
+  console.log( items );
+  var html = '';
+      html += '<div class="box"><h2>'+items.Name+'</h2>';
+	  html += '<h1>'+items.Description+'</h1>';
+	  html += '<h1>'+'Rs.'+items.Price+'/'+items.Unit+'</h1></div>';
+  
+  return html;
+}
 

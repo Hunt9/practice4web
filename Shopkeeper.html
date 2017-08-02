@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+
+		<title>Tijarah by Excalibur Creations</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" href="css/asd.css" />
+		</noscript>
+	
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="#">Tijarah Admin Panel</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="app.html">Category</a></li>
+						<li><a href="Items.html">Items</a></li>
+                        <li><a href="Shopkeeper.html">Shopkeeper</a></li>
+												<li><a href="#" class="button special">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+
+ <div class="container">
+   
+    
+    <div class="box1">
+    
+    <h1>Add Your Shopkeepers Here...</h1><h6 id="temp"></h6>
+ 
+      <div class="col-md-4">
+        <form method="post" name="contactForm">
+        
+         <div class="form-group">
+            <label for="sName">Name</label>
+            <input type="text" class="form-control" id="sName" required placeholder="Enter Shopkeeper's Name">
+ </div>
+       
+          <div class="form-group">
+            <label for="shopName">Shop Name</label>
+            <input type="text" class="form-control" id="shopName" required placeholder="Enter Shop Name">
+          </div>
+          
+          <div class="form-group">
+            <label for="sContact">Contact Number</label>
+            <input type="text" class="form-control" id="sContact" required placeholder="Enter Contact Number">
+          </div>
+          
+          <div class="form-group">
+            <label for="sDescription">Business Description</label>
+            <input type="text" class="form-control" id="sDescription" required placeholder="Enter Business Description" style="height:200px">
+          </div>
+          
+          
+          <div class="form-group">
+            <label for="sCNIC">CNIC Number</label>
+            <input type="number" class="form-control" id="sCNIC" required placeholder="Enter CNIC Number">
+          </div>
+          
+          <div class="form-group">
+            <label for="sNTN">NTN Number</label>
+            <input type="number" class="form-control" id="sNTN" required placeholder="Enter NTN Number">
+          </div>
+          
+          <div class="form-group">
+            <label for="sBank">Bank Name</label>
+            <input type="text" class="form-control" id="sBank" required placeholder="Enter Bank Name">
+          </div>
+          
+          <div class="form-group">
+            <label for="sBankBranch">Branch Name</label>
+            <input type="text" class="form-control" id="sBankBranch" required placeholder="Enter Branch Name">
+          </div>
+          
+          
+          <div class="form-group">
+            <label for="sBranchCode">Branch Code</label>
+            <input type="number" class="form-control" id="sBranchCode" required placeholder="Enter Branch Code">
+          </div>
+          
+          <div class="form-group">
+            <label for="sAccountTitle">Bank Account Title</label>
+            <input type="text" class="form-control" id="sAccountTitle" required placeholder="Enter Bank Account Title">
+          </div>
+          
+          <div class="form-group">
+            <label for="sBankAccountNumber">Bank Account Number</label>
+            <input type="number" class="form-control" id="sBankAccountNumber" required placeholder="Enter Bank Account Number">
+          </div>
+          
+          <div class="form-group">
+            <label for="sAccountNature">Nature Of Account</label>
+            <input type="text" class="form-control" id="sAccountNature" required placeholder="Enter Nature Of Account">
+          </div>
+          
+          <div class="form-group">
+            <label for="sCurrency">Currency</label>
+            <input type="text" class="form-control" id="sCurrency" required placeholder="Enter Currency">
+          </div>
+          
+          <div class="form-group">
+            <label for="sEmail">Email Address</label>
+            <input type="email" class="form-control" id="sEmail" required placeholder="Enter Email Address">
+          </div>
+          
+          <div class="form-group">
+            <label for="sPassword">Password</label>
+            <input type="password" class="form-control" id="sPassword" required placeholder="Enter 8 Digit Password">
+          </div>
+          
+          <div class="form-group">
+            <h1></h1>
+          <button type="submit" class="button addValue">Submit</button>
+          </div>
+        </form>
+      </div>
+      </div>
+      </div>
+      
+      <div class="container">
+        <ul id="shops" class="list-group">
+        
+  
+          <!-- Conatct Object li.list-group-item.contact will be added here by js -->
+        </ul>
+      </div>
+  </div>
+
+<h1 id = "cats"></h1>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- Include Firebase Library -->
+  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+  <!-- Contacts Sre JavaScript -->
+  <script src="Shopkeeper.js"></script>
+</body>
+</html>

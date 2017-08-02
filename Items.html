@@ -16,6 +16,7 @@
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" href="css/asd.css" />
 		</noscript>
 	
 	</head>
@@ -29,17 +30,22 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="app.html">Category</a></li>
 						<li><a href="Items.html">Items</a></li>
-												<li><a href="#" class="button special">Sign Up</a></li>
+						<li><a href="Shopkeeper.html">Shopkeeper</a></li>
+			<li><a href="#" class="button special">Sign Up</a></li>
 					</ul>
 				</nav>
 			</header>
 
 
  <div class="container">
+   </hr>
+	    
+    <div class="box1">
+    
+    
     <h1>Add Your Items Here...</h1><h6 id="temp"></h6>
-    <hr/>
-    <div class="row">
-      <div class="col-md-6">
+ 
+      <div class="col-md-4">
         <form method="post" name="contactForm">
         
          <div class="form-group">
@@ -56,7 +62,7 @@
           </div>
           <div class="form-group">
             <label for="email">Description</label>
-            <input type="text" class="form-control" id="description" required placeholder="Enter Item Description"  style="height:200px">
+            <input type="text" class="form-control" id="description" required placeholder="Enter Item Description">
           </div>
           <div class="form-group">
             <label for="city">Unit</label>
@@ -75,19 +81,29 @@
           </div>
           
           
-          <button type="submit" class="btn btn-primary addValue">Submit</button>
+          <div class="form-group">
+            <label for="email"> </label>
+          </div>
+          
+          
+          <button type="submit" class="button addValue">Submit</button>
+          
         </form>
       </div>
-      <div class="col-md-6">
-        <ul id="contacts" class="list-group">
-          <!-- Conatct Object li.list-group-item.contact will be added here by js -->
-        </ul>
+      </div>
       </div>
       
-    </div>
+      <div class="container">
+       <ul id="contacts" class="list-group">
+        
+   
+          <!-- Conatct Object li.list-group-item.contact will be added here by js -->
+        </ul>
+      </div>   
+      </div>
   </div>
 
-
+<h1 id = "cats"></h1>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- Latest compiled and minified Bootstrap -->
@@ -95,6 +111,6 @@
   <!-- Include Firebase Library -->
   <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
   <!-- Contacts Sre JavaScript -->
-  <script src="">script>
+  <script src="Items.js"></script>
 </body>
 </html>
