@@ -12,6 +12,22 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+        
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Latest compiled and minified Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- Include Firebase Library -->
+  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+  <!-- Contacts Sre JavaScript -->
+  <script src="Shopkeeper.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -124,9 +140,15 @@
             <input type="password" class="form-control" id="sPassword" required placeholder="Enter 8 Digit Password">
           </div>
           
+          <h1></h1>
+          <label class="myLabel" id="inputLabel">
+            <input type="file" id="upload" required/>
+          </label>
+      </div>
+          
           <div class="form-group">
             <h1></h1>
-          <button type="submit" class="button addValue">Submit</button>
+          <button type="submit" class="button addValue" id="btn">Submit</button>
           </div>
         </form>
       </div>
@@ -143,13 +165,17 @@
   </div>
 
 <h1 id = "cats"></h1>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <!-- Latest compiled and minified Bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <!-- Include Firebase Library -->
-  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
-  <!-- Contacts Sre JavaScript -->
-  <script src="Shopkeeper.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDJsbxU5DA8V_ZuAV_RiH3k7lmHyEF20Jc",
+    authDomain: "startup-164c6.firebaseapp.com",
+    databaseURL: "https://startup-164c6.firebaseio.com",
+    projectId: "startup-164c6",
+    storageBucket: "startup-164c6.appspot.com",
+    messagingSenderId: "722101621295"
+  };
+  firebase.initializeApp(config);
+</script>
 </body>
 </html>
