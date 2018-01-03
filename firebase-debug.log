@@ -1,0 +1,94 @@
+[debug] [2017-10-22T17:45:46.290Z] ----------------------------------------------------------------------
+[debug] [2017-10-22T17:45:46.294Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2017-10-22T17:45:46.296Z] CLI Version:   3.13.1
+[debug] [2017-10-22T17:45:46.296Z] Platform:      win32
+[debug] [2017-10-22T17:45:46.296Z] Node Version:  v7.3.0
+[debug] [2017-10-22T17:45:46.296Z] Time:          Sun Oct 22 2017 22:45:46 GMT+0500 (Pakistan Standard Time)
+[debug] [2017-10-22T17:45:46.296Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-22T17:45:46.310Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-10-22T17:45:46.312Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hp\Desktop\Admin Panel
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-10-22T17:46:17.701Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-22T17:46:17.701Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/KV85mFTCcQSnEkI5Yqpnd3oKMUSci7LRBFDmKprn6iA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Oct 22 2017 22:46:17 GMT+0500 (Pakistan Standard Time)
+[debug] [2017-10-22T17:46:18.744Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-22T17:46:18.816Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Sun Oct 22 2017 22:46:18 GMT+0500 (Pakistan Standard Time)
+[debug] [2017-10-22T17:46:20.724Z] <<< HTTP RESPONSE 200
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2017-10-22T17:46:36.349Z] >>> HTTP REQUEST GET https://startup-164c6.firebaseio.com/.settings/rules.json  
+ Sun Oct 22 2017 22:46:36 GMT+0500 (Pakistan Standard Time)
+[debug] [2017-10-22T17:46:37.976Z] <<< HTTP RESPONSE 200
+[info] +  Database Rules for startup-164c6 have been downloaded to y.
+[info] Future modifications to y will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2017-10-22T17:46:45.101Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-22T17:46:45.101Z] > authorizing via signed-in user
+[debug] [2017-10-22T17:46:45.101Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-22T17:46:45.101Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/KV85mFTCcQSnEkI5Yqpnd3oKMUSci7LRBFDmKprn6iA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Oct 22 2017 22:46:45 GMT+0500 (Pakistan Standard Time)
+[debug] [2017-10-22T17:46:45.480Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-22T17:46:45.511Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/startup-164c6  
+ Sun Oct 22 2017 22:46:45 GMT+0500 (Pakistan Standard Time)
+[debug] [2017-10-22T17:46:46.751Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-22T17:46:46.751Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/startup-164c6/tokens  
+ Sun Oct 22 2017 22:46:46 GMT+0500 (Pakistan Standard Time)
+[debug] [2017-10-22T17:46:48.059Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-22T17:46:48.059Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/startup-164c6?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Sun Oct 22 2017 22:46:48 GMT+0500 (Pakistan Standard Time)
+[debug] [2017-10-22T17:46:48.059Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/startup-164c6?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Sun Oct 22 2017 22:46:48 GMT+0500 (Pakistan Standard Time)
+[info] +  Wrote functions/package.json
+[info] +  Wrote functions/index.js
+[debug] [2017-10-22T17:46:50.963Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-22T17:46:51.066Z] <<< HTTP RESPONSE 200

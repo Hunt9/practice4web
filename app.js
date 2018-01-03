@@ -10,7 +10,7 @@ $(document).ready(function() {
     //collection
     var Movies = Backbone.Firebase.Collection.extend({
         model: Movie,
-        firebase: new Firebase("https://practice-47181.firebaseio.com/")
+        firebase: new Firebase("https://startup-164c6.firebaseio.com/Categories")
     });
     // init collection
     var favMovies = new Movies();
